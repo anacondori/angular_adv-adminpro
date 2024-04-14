@@ -1,1 +1,34 @@
-<p>grafica1 works!</p>
+
+<div class="row">
+    <div class="col-6">
+      <app-dona titulo="Ventas"
+                [labels] = "['Pan','Refresco','Tacos']"
+                [datas] = "[10,20,30]"/>
+    </div>
+
+    <div class="col-6">
+      <app-dona titulo="Compras"
+                [labels] = "['Pollo', 'Carne', 'Pescado']"
+                [datas] = "[ 50, 20, 30 ]"/>
+    </div>
+
+</div>
+
+
+<div class="row">
+  <div class="col-6">
+    <app-dona titulo="Cambios"
+              [labels] = "['jugos', 'fruta', 'carne']"
+              [datas] = "[ 80, 15, 15 ]"/>
+  </div>
+
+  <div class="col-6">
+    <app-dona titulo="Otros"/>
+  </div>
+
+</div>
+
+
+
+
+

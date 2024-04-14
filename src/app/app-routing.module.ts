@@ -12,7 +12,7 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
 const routes: Routes = [
   // path: '/dashboard' PagesRouting
-  {path:'', redirectTo:'/dashboard', pathMatch: 'full'},
+  {path:'', redirectTo:'dashboard', pathMatch: 'full'},
   // path: '/auth' AuthRouting
 
   {path:'**', component: NopagefoundComponent},
@@ -21,6 +21,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes),
+    // RouterModule.forRoot(routes, { useHash: true }),
     AuthRoutingModule,
     PagesRoutingModule
   ],
